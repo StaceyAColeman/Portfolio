@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
+import dj_database_url
 import os
 
 
@@ -27,7 +28,7 @@ SECRET_KEY = 'z#u@a+5$^1t6#^m$6sruw&%&(x0n@i$+(fd@j9jbrj25#f725b'
 DEBUG = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = ['django-portfolio-0b496c91fb4b.herokuapp.com']
+ALLOWED_HOSTS = ['django-portfolio-0b496c91fb4b.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -87,7 +88,9 @@ DATABASES = {
         'PORT':'5432',
     }
 }
-
+# This overrides the local database if a DATABASE_URL environment variable is found
+db_from_env = dj_database_url.config(conn_max_age=600, ssl_require=True)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
