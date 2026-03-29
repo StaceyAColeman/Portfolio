@@ -27,7 +27,7 @@ SECRET_KEY = 'z#u@a+5$^1t6#^m$6sruw&%&(x0n@i$+(fd@j9jbrj25#f725b'
 DEBUG = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = [https://django-portfolio-0b496c91fb4b.herokuapp.com]
+ALLOWED_HOSTS = ['django-portfolio-0b496c91fb4b.herokuapp.com']
 
 
 # Application definition
