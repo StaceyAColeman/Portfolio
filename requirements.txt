@@ -1,0 +1,9 @@
+Django
+Flask
+Flask-RESTful
+Flask-JWT-Extended
+Flask-SQLAlchemy
+uwsgi
+gunicorn
+psycopg2-binary
+pillow
