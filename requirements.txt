@@ -7,3 +7,4 @@ uwsgi
 gunicorn
 psycopg2-binary
 pillow
+dj-database-url
