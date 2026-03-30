@@ -1,0 +1,100 @@
+2026-03-29T18:52:10.951851+00:00 app[web.1]: host = request.get_host()
+2026-03-29T18:52:10.951851+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/http/request.py", line 205, in get_host
+2026-03-29T18:52:10.951851+00:00 app[web.1]: raise DisallowedHost(msg)
+2026-03-29T18:52:10.951852+00:00 app[web.1]: django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'django-portfolio-0b496c91fb4b.herokuapp.com'. You may need to add 'django-portfolio-0b496c91fb4b.herokuapp.com' to ALLOWED_HOSTS.
+2026-03-29T18:52:10.952279+00:00 app[web.1]: 10.1.16.33 - - [29/Mar/2026:18:52:10 +0000] "GET / HTTP/1.1" 400 61359 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29T18:52:10.953162+00:00 heroku[router]: at=info method=GET path="/" host=django-portfolio-0b496c91fb4b.herokuapp.com request_id=d60e7580-78af-7536-066a-bea1fc57d90b fwd="75.38.141.85" dyno=web.1 connect=0ms service=16ms status=400 bytes=61359 protocol=http1.1 tls=true tls_version=unknown
+2026-03-29T18:52:11.531352+00:00 app[web.1]: Invalid HTTP_HOST header: 'django-portfolio-0b496c91fb4b.herokuapp.com'. You may need to add 'django-portfolio-0b496c91fb4b.herokuapp.com' to ALLOWED_HOSTS.
+2026-03-29T18:52:11.531377+00:00 app[web.1]: Traceback (most recent call last):
+2026-03-29T18:52:11.531378+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/core/handlers/exception.py", line 55, in inner
+2026-03-29T18:52:11.531389+00:00 app[web.1]: response = get_response(request)
+2026-03-29T18:52:11.531389+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/utils/deprecation.py", line 308, in __call__
+2026-03-29T18:52:11.531389+00:00 app[web.1]: response = self.process_request(request)
+2026-03-29T18:52:11.531390+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/middleware/common.py", line 48, in process_request
+2026-03-29T18:52:11.531390+00:00 app[web.1]: host = request.get_host()
+2026-03-29T18:52:11.531391+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/http/request.py", line 205, in get_host
+2026-03-29T18:52:11.531391+00:00 app[web.1]: raise DisallowedHost(msg)
+2026-03-29T18:52:11.531392+00:00 app[web.1]: django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'django-portfolio-0b496c91fb4b.herokuapp.com'. You may need to add 'django-portfolio-0b496c91fb4b.herokuapp.com' to ALLOWED_HOSTS.
+2026-03-29T18:52:11.531746+00:00 app[web.1]: 10.1.16.33 - - [29/Mar/2026:18:52:11 +0000] "GET /favicon.ico HTTP/1.1" 400 61232 "https://django-portfolio-0b496c91fb4b.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29T18:52:11.532427+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=django-portfolio-0b496c91fb4b.herokuapp.com request_id=bb79b742-0db5-4895-cc40-6e71e80864c6 fwd="75.38.141.85" dyno=web.1 connect=0ms service=15ms status=400 bytes=61232 protocol=http1.1 tls=true tls_version=unknown
+2026-03-29T18:53:01.310030+00:00 app[api]: Log session created by user staceyacoleman@outlook.com
+2026-03-29T19:05:08.000000+00:00 app[api]: Build started by user staceyacoleman@outlook.com
+2026-03-29T19:05:33.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/2686e0fc-bc7a-41fa-bae2-9f1b27d67914/activity/builds/fc1e2ccf-a92d-4747-afa9-969fd206d054
+2026-03-29T19:11:26.000000+00:00 app[api]: Build started by user staceyacoleman@outlook.com
+2026-03-29T19:11:42.427720+00:00 app[api]: Deploy c8ea7373 by user staceyacoleman@outlook.com
+2026-03-29T19:11:42.427720+00:00 app[api]: Release v9 created by user staceyacoleman@outlook.com
+2026-03-29T19:11:42.686735+00:00 heroku[web.1]: Restarting
+2026-03-29T19:11:42.691078+00:00 heroku[web.1]: State changed from up to starting
+2026-03-29T19:11:43.454492+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2026-03-29T19:11:43.472277+00:00 app[web.1]: [2026-03-29 19:11:43 +0000] [2] [INFO] Handling signal: term
+2026-03-29T19:11:43.472356+00:00 app[web.1]: [2026-03-29 19:11:43 +0000] [8] [INFO] Worker exiting (pid: 8)
+2026-03-29T19:11:43.472356+00:00 app[web.1]: [2026-03-29 19:11:43 +0000] [9] [INFO] Worker exiting (pid: 9)
+2026-03-29T19:11:43.573560+00:00 app[web.1]: [2026-03-29 19:11:43 +0000] [2] [INFO] Worker (pid:8) was sent SIGTERM!
+2026-03-29T19:11:43.573686+00:00 app[web.1]: [2026-03-29 19:11:43 +0000] [2] [INFO] Worker (pid:9) was sent SIGTERM!
+2026-03-29T19:11:43.673979+00:00 app[web.1]: [2026-03-29 19:11:43 +0000] [2] [INFO] Shutting down: Master
+2026-03-29T19:11:43.740958+00:00 heroku[web.1]: Process exited with status 0
+2026-03-29T19:11:46.026230+00:00 heroku[web.1]: Starting process with command `gunicorn portfolio.wsgi`
+2026-03-29T19:11:46.763135+00:00 app[web.1]: Python buildpack: Detected 512 MB available memory and 8 CPU cores.
+2026-03-29T19:11:46.763233+00:00 app[web.1]: Python buildpack: Defaulting WEB_CONCURRENCY to 2 based on the available memory.
+2026-03-29T19:11:46.917403+00:00 app[web.1]: [2026-03-29 19:11:46 +0000] [2] [INFO] Starting gunicorn 25.3.0
+2026-03-29T19:11:46.917695+00:00 app[web.1]: [2026-03-29 19:11:46 +0000] [2] [INFO] Listening at: http://0.0.0.0:54168 (2)
+2026-03-29T19:11:46.917730+00:00 app[web.1]: [2026-03-29 19:11:46 +0000] [2] [INFO] Using worker: sync
+2026-03-29T19:11:46.919834+00:00 app[web.1]: [2026-03-29 19:11:46 +0000] [8] [INFO] Booting worker with pid: 8
+2026-03-29T19:11:46.947798+00:00 app[web.1]: [2026-03-29 19:11:46 +0000] [9] [INFO] Booting worker with pid: 9
+2026-03-29T19:11:47.058106+00:00 app[web.1]: [2026-03-29 19:11:47 +0000] [2] [INFO] Control socket listening at /app/.gunicorn/gunicorn.ctl
+2026-03-29T19:11:47.219236+00:00 heroku[web.1]: State changed from starting to up
+2026-03-29T19:11:48.000000+00:00 app[api]: Build succeeded
+2026-03-29T19:12:15.381926+00:00 app[web.1]: Internal Server Error: /
+2026-03-29T19:12:15.381950+00:00 app[web.1]: Traceback (most recent call last):
+2026-03-29T19:12:15.381951+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/core/handlers/exception.py", line 55, in inner
+2026-03-29T19:12:15.381951+00:00 app[web.1]: response = get_response(request)
+2026-03-29T19:12:15.381952+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/core/handlers/base.py", line 198, in _get_response
+2026-03-29T19:12:15.381954+00:00 app[web.1]: response = wrapped_callback(request, *callback_args, **callback_kwargs)
+2026-03-29T19:12:15.381954+00:00 app[web.1]: File "/app/jobs/views.py", line 5, in home
+2026-03-29T19:12:15.381955+00:00 app[web.1]: return render(request, 'jobs/home.html', {'jobs':jobs})
+2026-03-29T19:12:15.381955+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/shortcuts.py", line 25, in render
+2026-03-29T19:12:15.381966+00:00 app[web.1]: content = loader.render_to_string(template_name, context, request, using=using)
+2026-03-29T19:12:15.381966+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/template/loader.py", line 61, in render_to_string
+2026-03-29T19:12:15.381966+00:00 app[web.1]: template = get_template(template_name, using=using)
+2026-03-29T19:12:15.381967+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/template/loader.py", line 19, in get_template
+2026-03-29T19:12:15.381967+00:00 app[web.1]: raise TemplateDoesNotExist(template_name, chain=chain)
+2026-03-29T19:12:15.381967+00:00 app[web.1]: django.template.exceptions.TemplateDoesNotExist: jobs/home.html
+2026-03-29T19:12:15.382441+00:00 app[web.1]: 10.1.19.151 - - [29/Mar/2026:19:12:15 +0000] "GET / HTTP/1.1" 500 70024 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29T19:12:15.383485+00:00 heroku[router]: at=info method=GET path="/" host=django-portfolio-0b496c91fb4b.herokuapp.com request_id=029c3677-e1bf-5700-a33c-7c8a66ad3df2 fwd="75.38.141.85" dyno=web.1 connect=0ms service=30ms status=500 bytes=70024 protocol=http1.1 tls=true tls_version=unknown
+2026-03-29T19:12:15.959886+00:00 app[web.1]: Not Found: /favicon.ico
+2026-03-29T19:12:15.960281+00:00 app[web.1]: 10.1.19.151 - - [29/Mar/2026:19:12:15 +0000] "GET /favicon.ico HTTP/1.1" 404 2714 "https://django-portfolio-0b496c91fb4b.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29T19:12:15.960512+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=django-portfolio-0b496c91fb4b.herokuapp.com request_id=81442f9a-b122-2488-0200-b20d1f3f4084 fwd="75.38.141.85" dyno=web.1 connect=0ms service=10ms status=404 bytes=2714 protocol=http1.1 tls=true tls_version=unknown
+2026-03-29T19:15:56.034884+00:00 app[api]: Log session created by user staceyacoleman@outlook.com
+2026-03-29T22:10:39.000000+00:00 app[api]: Build started by user staceyacoleman@outlook.com
+2026-03-29T22:10:54.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/2686e0fc-bc7a-41fa-bae2-9f1b27d67914/activity/builds/a9053b53-8a4a-4f03-86e1-b3de833f372a
+2026-03-29T22:12:44.531261+00:00 app[api]: Log session created by user staceyacoleman@outlook.com
+2026-03-29T22:25:14.000000+00:00 app[api]: Build started by user staceyacoleman@outlook.com
+2026-03-29T22:25:25.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/2686e0fc-bc7a-41fa-bae2-9f1b27d67914/activity/builds/e0386f14-7f61-4def-80c6-797bde2d9f5a
+2026-03-29T22:27:29.165174+00:00 app[api]: Log session created by user staceyacoleman@outlook.com
+2026-03-29T22:51:40.000000+00:00 app[api]: Build started by user staceyacoleman@outlook.com
+2026-03-29T22:51:51.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/2686e0fc-bc7a-41fa-bae2-9f1b27d67914/activity/builds/d2748c10-fb99-4d3a-a698-9031834dddc9
+2026-03-29T22:52:29.999998+00:00 app[api]: Log session created by user staceyacoleman@outlook.com
+2026-03-29T23:00:11.210012+00:00 app[api]: Log session created by user staceyacoleman@outlook.com
+2026-03-29T23:00:35.462443+00:00 app[api]: Log session created by user staceyacoleman@outlook.com
+2026-03-29T23:04:32.747183+00:00 app[web.1]: Internal Server Error: /
+2026-03-29T23:04:32.747198+00:00 app[web.1]: Traceback (most recent call last):
+2026-03-29T23:04:32.747200+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/core/handlers/exception.py", line 55, in inner
+2026-03-29T23:04:32.747200+00:00 app[web.1]: response = get_response(request)
+2026-03-29T23:04:32.747201+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/core/handlers/base.py", line 198, in _get_response
+2026-03-29T23:04:32.747202+00:00 app[web.1]: response = wrapped_callback(request, *callback_args, **callback_kwargs)
+2026-03-29T23:04:32.747203+00:00 app[web.1]: File "/app/jobs/views.py", line 5, in home
+2026-03-29T23:04:32.747204+00:00 app[web.1]: return render(request, 'jobs/home.html', {'jobs':jobs})
+2026-03-29T23:04:32.747204+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/shortcuts.py", line 25, in render
+2026-03-29T23:04:32.747205+00:00 app[web.1]: content = loader.render_to_string(template_name, context, request, using=using)
+2026-03-29T23:04:32.747205+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/template/loader.py", line 61, in render_to_string
+2026-03-29T23:04:32.747205+00:00 app[web.1]: template = get_template(template_name, using=using)
+2026-03-29T23:04:32.747206+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.14/site-packages/django/template/loader.py", line 19, in get_template
+2026-03-29T23:04:32.747206+00:00 app[web.1]: raise TemplateDoesNotExist(template_name, chain=chain)
+2026-03-29T23:04:32.747206+00:00 app[web.1]: django.template.exceptions.TemplateDoesNotExist: jobs/home.html
+2026-03-29T23:04:32.747611+00:00 app[web.1]: 10.1.42.163 - - [29/Mar/2026:23:04:32 +0000] "GET / HTTP/1.1" 500 68922 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-29T23:04:32.748838+00:00 heroku[router]: at=info method=GET path="/" host=django-portfolio-0b496c91fb4b.herokuapp.com request_id=cd3e2b96-a0b4-6969-d1d1-3adea4f17d04 fwd="75.38.141.85" dyno=web.1 connect=0ms service=23ms status=500 bytes=68922 protocol=http1.1 tls=false
+2026-03-29T23:04:33.271293+00:00 app[web.1]: Not Found: /favicon.ico
+2026-03-29T23:04:33.271550+00:00 app[web.1]: 10.1.42.163 - - [29/Mar/2026:23:04:33 +0000] "GET /favicon.ico HTTP/1.1" 404 2713 "http://django-portfolio-0b496c91fb4b.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-03-29T23:04:33.271779+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=django-portfolio-0b496c91fb4b.herokuapp.com request_id=9ed081aa-0234-adf0-7438-f1d95c2ce6d7 fwd="75.38.141.85" dyno=web.1 connect=0ms service=4ms status=404 bytes=2713 protocol=http1.1 tls=false
+2026-03-29T23:48:17.000000+00:00 app[api]: Build started by user staceyacoleman@outlook.com
+2026-03-29T23:48:27.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/2686e0fc-bc7a-41fa-bae2-9f1b27d67914/activity/builds/d968bf40-5e99-40cd-901d-b364401203fc
