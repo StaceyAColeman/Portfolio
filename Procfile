@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn --worker-tmp-dir /dev/shm portfolio.wsgi
+web: gunicorn portfolio.wsgi:application --worker-tmp-dir /dev/shm
