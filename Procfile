@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn portfolio.wsgi:application --bind 0.0.0.0:8080
+web: gunicorn --worker-tmp-dir /dev/shm portfolio.wsgi:application
