@@ -78,16 +78,27 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME':'portfoliodb',
+#        'USER':'postgres',
+#        'PASSWORD':'C#@mp001',
+#        'HOST':'127.0.0.1',
+#        'PORT':'5432',
+#    }
+#}
+
+# Use dj-database-url to pull from the environment variable
+# Provide a default (like SQLite) for local development if DATABASE_URL isn't set
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'portfoliodb',
-        'USER':'postgres',
-        'PASSWORD':'C#@mp001',
-        'HOST':'127.0.0.1',
-        'PORT':'5432',
-    }
+    'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL', 'sqlite:///db.sqlite3'),
+        conn_max_age=600,
+        conn_health_checks=True
+    )
 }
+
 # This overrides the local database if a DATABASE_URL environment variable is found
 db_from_env = dj_database_url.config(conn_max_age=600, ssl_require=True)
 DATABASES['default'].update(db_from_env)
