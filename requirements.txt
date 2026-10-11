@@ -13,3 +13,4 @@ whitenoise>=6.7.0
 
 # Async standard interfaces (Used by modern Django cores)
 asgiref>=3.8.1
+pillow>=10.0.0
