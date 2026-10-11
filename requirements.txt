@@ -1,4 +1,3 @@
-aniso8601 @ file:///home/conda/feedstock_root/build_artifacts/aniso8601_1618789466884/work
 asgiref @ file:///home/conda/feedstock_root/build_artifacts/asgiref_1711268871457/work
 asn1crypto @ file:///home/conda/feedstock_root/build_artifacts/asn1crypto_1595949944546/work
 asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1733175639022/work
